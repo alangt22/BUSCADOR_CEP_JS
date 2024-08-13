@@ -1,0 +1,136 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo inicial para o h1, com a animação aplicada */
+header h1 {
+    opacity: 0; /* Inicialmente invisível */
+    animation: fadeIn 4s ease-out forwards; /* Duração e efeito da animação */
+}
+header {
+    background-color: #00245b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+
+    
+}
+
+input:focus {
+    outline: none; /* Remove the default focus outline */
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #00245b;
+    color: white;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #003d98;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: 1px solid #333;
+    width: 550px;
+    display: none;
+    border-radius: 10px;
+}
+
+span {
+    font-weight: bold;
+    display: block;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #f0f0f0;
+}
+
+
+#erro {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+
+}
+#dados {
+    margin-top: 10px;
+}
+
+#aviso{
+    color: #4c4c4c;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.cep-color{
+    color: green;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
+    background-color: #f1f1f1; /* Adiciona um fundo para maior legibilidade */
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do footer */
+}
+
+
+@media(max-width:450px){
+    .container {
+        width: 320px;
+    }
+    
+    span {
+        font-size: 1.2rem;
+    }
+    
+}
